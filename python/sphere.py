@@ -21,5 +21,5 @@ sphereB = sphere(pos = vector(1, -2, 0),
             size = vector(3, 3, 3),
             color = vector(5, 10, 1))
 
-for i in range(0, 10**1000):
+for i in range(0, 10*10):
     colorChange()
