@@ -70,7 +70,6 @@ def hi():
                 nn.ReLU(), 
                 nn.MaxPool2d(2)
             )
-            
             self.out = nn.Linear(32 * 7 * 7, 10)
         def forward(self, x):
             x = self.conv1(x)
@@ -78,5 +77,14 @@ def hi():
             x = x.view(x.size(0), -1)
             output = self.out(x)
             return output, x
-        
+    
+    cnn = CNN()
+
+    loss_func = nn.CrossEntropyLoss()
+    print(loss_func)
+
+    from torch import optim
+    optimizer = optim.Adam(cnn.parameters(), lr = 0.01)
+    print(optimizer)
+
 hi()
