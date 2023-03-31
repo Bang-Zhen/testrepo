@@ -96,7 +96,7 @@ def button(msg,x,y,w,h,ic,ac,action=None):
         if click[0] == 1 and action != None:
             action()         
     else:
-        pygame.draw.rect(gameDisplay, ic,(x,y,w,h))
+        pygame.draw.rect(gameDisplay, ic,(x,y,w,h))                                 
     smallText = pygame.font.SysFont("comicsansms",20)
     textSurf, textRect = text_objects(msg, smallText)
     textRect.center = ( (x+(w/2)), (y+(h/2)) )

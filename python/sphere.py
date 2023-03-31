@@ -1,7 +1,7 @@
 from vpython import *
 import random
 
-colors = [color.green, color.blue, color.black, color.orange, color.purple, color.cyan]
+colors = [color.green, color.blue, color.red, color.orange, color.purple, color.cyan]
 
 def colorChange():
     sleep(1)
