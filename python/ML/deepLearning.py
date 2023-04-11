@@ -1,3 +1,4 @@
+#run in google colab
 import torch
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -121,9 +122,8 @@ def train(num_epochs, cnn, loaders):
                 pass
         
         pass
-    
-    
     pass
+
 train(num_epochs, cnn, loaders)
 
 def test():
