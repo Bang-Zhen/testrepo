@@ -120,7 +120,6 @@ def train(num_epochs, cnn, loaders):
                 print ('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}' 
                        .format(epoch + 1, num_epochs, i + 1, total_step, loss.item()))
                 pass
-        
         pass
     pass
 
